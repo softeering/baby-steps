@@ -1,4 +1,4 @@
-## ubuntu
+## ubuntu - Windows bash
 ### upgrade to latest Ubuntu version
 ```bash
 sudo -S RELEASE_UPGRADER_NO_SCREEN=1 do-release-upgrade
