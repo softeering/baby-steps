@@ -6,6 +6,15 @@
 
 ## git command helper
 
+### init new repo from local project
+
+Under the project folder
+- git init
+- git add -A .
+- git commit -m "first commit"
+- git remote add origin %remote_repository_url%
+- git push origin master
+
 ### reset local from remote
 
 - git fetch origin
