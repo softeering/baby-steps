@@ -27,6 +27,13 @@ Under the project folder
   - one liner: git checkout -b newbranch
 - git push --set-upstream origin newbranch
 
+### delete branch
+
+- local
+  - git branch -d newbranch
+- remote
+  - git push <remote_name> --delete newbranch
+
 ### revert a commit
 
 - git ls-remote (to get the commit id)
