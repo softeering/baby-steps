@@ -24,7 +24,8 @@ Under the project folder
 
 - git branch newbranch
 - git checkout newbranch
-- one liner: git checkout -b newbranch
+  - one liner: git checkout -b newbranch
+- git push --set-upstream origin newbranch
 
 ### revert a commit
 
