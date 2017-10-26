@@ -20,6 +20,12 @@ Under the project folder
 - git fetch origin
 - git reset --hard origin/master
 
+### create feature branch from X and checkout
+
+- git branch newbranch
+- git checkout newbranch
+- one liner: git checkout -b newbranch
+
 ### revert a commit
 
 - git ls-remote (to get the commit id)
