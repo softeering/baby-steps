@@ -30,6 +30,10 @@ lxrun /uninstall /full
 
 ```cmd
 lxrun /install /y
+sudo -S apt-mark hold sudo
+sudo -S apt-mark hold procps
+sudo -S apt-mark hold strace
+sudo -S RELEASE_UPGRADER_NO_SCREEN=1 do-release-upgrade
 ```
 
 ### set default account
