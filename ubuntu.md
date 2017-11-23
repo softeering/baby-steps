@@ -29,6 +29,7 @@ lxrun /uninstall /full
 ### install from windows store
 
 ```cmd
+rem ensure you drop %localappdata%\lxss before installing
 lxrun /install /y
 sudo -S apt-mark hold sudo
 sudo -S apt-mark hold procps
