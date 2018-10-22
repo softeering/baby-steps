@@ -42,3 +42,26 @@ sudo -S RELEASE_UPGRADER_NO_SCREEN=1 do-release-upgrade
 ```cmd
 lxrun /setdefaultuser root
 ```
+
+### execute a command on multiple boxes via sshpass
+
+* apt install sshpass [if not already done]
+
+```
+#!/bin/bash
+read -s -p "Type in your password [then press enter]:" pass
+COMMAND="$1"
+for i in `seq 11 20 ; seq 51 60`;
+do
+        HOST="boxname$i"
+        echo "Connecting to $HOST exec command $COMMAND"
+        #ssh -t $HOST $COMMAND
+        sshpass -p $pass ssh -q -t $HOST $COMMAND
+Done
+```
+
+* and call it this way:
+
+```
+./execboxes.sh COMMAND
+```
